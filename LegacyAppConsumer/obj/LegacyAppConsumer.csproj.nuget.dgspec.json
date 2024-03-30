@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\s28307\\Desktop\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj": {}
+    "C:\\Users\\User\\RiderProjects\\apbd04\\LegacyAppConsumer\\LegacyAppConsumer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\s28307\\Desktop\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj": {
+    "C:\\Users\\User\\RiderProjects\\apbd04\\LegacyAppConsumer\\LegacyAppConsumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\s28307\\Desktop\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
+        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\apbd04\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
         "projectName": "LegacyAppConsumer",
-        "projectPath": "C:\\Users\\s28307\\Desktop\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
-        "packagesPath": "C:\\Users\\s28307\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\s28307\\Desktop\\zadanie\\LegacyAppConsumer\\obj\\",
+        "projectPath": "C:\\Users\\User\\RiderProjects\\apbd04\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\RiderProjects\\apbd04\\LegacyAppConsumer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\s28307\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\s28307\\Desktop\\zadanie\\LegacyApp\\LegacyApp.csproj": {
-                "projectPath": "C:\\Users\\s28307\\Desktop\\zadanie\\LegacyApp\\LegacyApp.csproj"
+              "C:\\Users\\User\\RiderProjects\\apbd04\\LegacyApp\\LegacyApp.csproj": {
+                "projectPath": "C:\\Users\\User\\RiderProjects\\apbd04\\LegacyApp\\LegacyApp.csproj"
               }
             }
           }
@@ -38,11 +36,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -68,24 +61,22 @@
         }
       }
     },
-    "C:\\Users\\s28307\\Desktop\\zadanie\\LegacyApp\\LegacyApp.csproj": {
+    "C:\\Users\\User\\RiderProjects\\apbd04\\LegacyApp\\LegacyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\s28307\\Desktop\\zadanie\\LegacyApp\\LegacyApp.csproj",
+        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\apbd04\\LegacyApp\\LegacyApp.csproj",
         "projectName": "LegacyApp",
-        "projectPath": "C:\\Users\\s28307\\Desktop\\zadanie\\LegacyApp\\LegacyApp.csproj",
-        "packagesPath": "C:\\Users\\s28307\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\s28307\\Desktop\\zadanie\\LegacyApp\\obj\\",
+        "projectPath": "C:\\Users\\User\\RiderProjects\\apbd04\\LegacyApp\\LegacyApp.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\RiderProjects\\apbd04\\LegacyApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\s28307\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -98,11 +89,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
