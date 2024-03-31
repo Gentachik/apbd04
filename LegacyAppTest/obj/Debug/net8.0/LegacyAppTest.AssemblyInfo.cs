@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("LegacyApp")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("LegacyAppTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+935488e9a5f7aaeb19ceb20164dbd8a7aaf9425e")]
-[assembly: System.Reflection.AssemblyProductAttribute("LegacyApp")]
-[assembly: System.Reflection.AssemblyTitleAttribute("LegacyApp")]
+[assembly: System.Reflection.AssemblyProductAttribute("LegacyAppTest")]
+[assembly: System.Reflection.AssemblyTitleAttribute("LegacyAppTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
