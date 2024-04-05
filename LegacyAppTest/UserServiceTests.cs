@@ -7,14 +7,13 @@ public class UserServiceTests
     [Fact]
     public void AddUser_ReturnsFalseWhenFirstNameIsEmpty()
     {
-        
         // Arrange
         var userService = new UserService();
 
         // Act
         var result = userService.AddUser(
-            null, 
-            "Kowalski", 
+            null,
+            "Kowalski",
             "kowalski@wp.pl",
             DateTime.Parse("2000-01-01"),
             1
@@ -32,8 +31,8 @@ public class UserServiceTests
         var userService = new UserService();
         //Act
         var result = userService.AddUser(
-            "Jan", 
-            "Kowalski", 
+            "Jan",
+            "Kowalski",
             "kowalskiwppl",
             DateTime.Parse("2000-01-01"),
             1
@@ -41,6 +40,7 @@ public class UserServiceTests
         //Assert
         Assert.False(result);
     }
+
     [Fact]
     public void AddUser_ReturnsFalseWhenYoungerThen21YearsOld()
     {
@@ -48,8 +48,8 @@ public class UserServiceTests
         var userService = new UserService();
         //Act
         var result = userService.AddUser(
-            "Jan", 
-            "Kowalski", 
+            "Jan",
+            "Kowalski",
             "kowalski@wp.pl",
             DateTime.Now,
             1
@@ -57,6 +57,7 @@ public class UserServiceTests
         //Assert
         Assert.False(result);
     }
+
     [Fact]
     public void AddUser_ReturnsTrueWhenVeryImportantClient()
     {
@@ -64,8 +65,8 @@ public class UserServiceTests
         var userService = new UserService();
         //Act
         var result = userService.AddUser(
-            "Jan", 
-            "Kowalski", 
+            "Jan",
+            "Kowalski",
             "kowalski@kowalski.pl",
             DateTime.Parse("2000-01-01"),
             2
@@ -73,6 +74,7 @@ public class UserServiceTests
         //Assert
         Assert.True(result);
     }
+
     [Fact]
     public void AddUser_ReturnsTrueWhenImportantClient()
     {
@@ -80,8 +82,8 @@ public class UserServiceTests
         var userService = new UserService();
         //Act
         var result = userService.AddUser(
-            "Jan", 
-            "Kowalski", 
+            "Jan",
+            "Kowalski",
             "kowalski@kowalski.pl",
             DateTime.Parse("2000-01-01"),
             3
@@ -89,6 +91,7 @@ public class UserServiceTests
         //Assert
         Assert.True(result);
     }
+
     [Fact]
     public void AddUser_ReturnsTrueWhenNormalClient()
     {
@@ -96,8 +99,8 @@ public class UserServiceTests
         var userService = new UserService();
         //Act
         var result = userService.AddUser(
-            "Jan", 
-            "Kwiatkowski", 
+            "Jan",
+            "Kwiatkowski",
             "andrzejewicz@wp.pl",
             DateTime.Parse("2000-01-01"),
             5
@@ -105,6 +108,7 @@ public class UserServiceTests
         //Assert
         Assert.True(result);
     }
+
     [Fact]
     public void AddUser_ReturnsFalseWhenNormalClientWithNoCreditLimit()
     {
@@ -112,8 +116,8 @@ public class UserServiceTests
         var userService = new UserService();
         //Act
         var result = userService.AddUser(
-            "Jan", 
-            "Kowalski", 
+            "Jan",
+            "Kowalski",
             "kowalski@kowalski.pl",
             DateTime.Parse("2000-01-01"),
             1
@@ -121,6 +125,7 @@ public class UserServiceTests
         //Assert
         Assert.False(result);
     }
+
     [Fact]
     public void AddUser_ThrowsExceptionWhenUserDoesNotExist()
     {
@@ -128,8 +133,8 @@ public class UserServiceTests
         var userService = new UserService();
         // Act
         Action action = () => userService.AddUser(
-            "Jan", 
-            "Kowalski", 
+            "Jan",
+            "Kowalski",
             "kowalski@kowalski.pl",
             DateTime.Parse("2000-01-01"),
             100
@@ -137,6 +142,7 @@ public class UserServiceTests
         // Assert
         Assert.Throws<ArgumentException>(action);
     }
+
     [Fact]
     public void AddUser_ThrowsExceptionWhenUserNoCreditLimitExistsForUser()
     {
@@ -144,8 +150,8 @@ public class UserServiceTests
         var userService = new UserService();
         // Act
         Action action = () => userService.AddUser(
-            "Jan", 
-            "Kowalski", 
+            "Jan",
+            "Kowalski",
             "kowalski@kowalski.pl",
             DateTime.Parse("2000-01-01"),
             100
@@ -161,5 +167,4 @@ public class UserServiceTests
     // AddUser_ReturnsFalseWhenNormalClientWithNoCreditLimit. Done
     // AddUser_ThrowsExceptionWhenUserDoesNotExist. Done
     // AddUser_ThrowsExceptionWhenUserNoCreditLimitExistsForUser. Done
-    
 }

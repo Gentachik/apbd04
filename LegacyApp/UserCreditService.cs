@@ -38,5 +38,34 @@ namespace LegacyApp
 
             throw new ArgumentException($"Client {lastName} does not exist");
         }
+
+        public bool ValidateUserCreditLimit(User user, int clientId)
+        {
+            var clientRepository = new ClientRepository();
+            var client = clientRepository.GetById(clientId);
+
+            switch (client.Type)
+            {
+                case "VeryImportantClient":
+                    user.HasCreditLimit = false;
+                    break;
+                case "ImportantClient":
+                {
+                    var creditLimit = GetCreditLimit(user.LastName, user.DateOfBirth);
+                    creditLimit *= 2;
+                    user.CreditLimit = creditLimit;
+                    break;
+                }
+                default:
+                {
+                    user.HasCreditLimit = true;
+                    int creditLimit = GetCreditLimit(user.LastName, user.DateOfBirth);
+                    user.CreditLimit = creditLimit;
+                    break;
+                }
+            }
+
+            return !user.HasCreditLimit || user.CreditLimit >= 500;
+        }
     }
 }
